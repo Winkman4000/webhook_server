@@ -10,7 +10,7 @@ defmodule WebhookServer.Application do
     children = [
       # Starts a worker by calling: WebhookServer.Worker.start_link(arg)
       # {WebhookServer.Worker, arg}
-      {Plug.Cowboy, scheme: :http, plug: WebhookServer, options: [port: 443]}
+      {Plug.Cowboy, scheme: :http, plug: WebhookServer, options: [port: 80]}
     ]
 
     # See https://hexdocs.pm/elixir/Supervisor.html
